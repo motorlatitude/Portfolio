@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700|Libre+Baskerville:400,700&display=swap');
+
+*::-webkit-scrollbar {
+    width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+    background: rgba(55, 55, 55, 0.1);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #e7e1d0;
+    outline: 1px solid #e7e1d0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #171717;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.page-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #171717;
+    background: url(./../img/background@2x.png) center center no-repeat;
+    background-size: cover;
+    filter: saturate(0);
+    z-index: 1;
+}
+
+.page-background.page-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 170vh;
+    background-color: #e7e1d0;
+    background: #e7e1d0;
+    z-index: -1;
+}
+
+.page-background.page-three {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 120vh;
+    background: #171717;
+    filter: none;
+    z-index: 1;
+    box-shadow: 0 5px 25px #171717;
+}
+
+.page-background.page-three:before {
+    content: '';
+    position: absolute;
+    top: -12vw;
+    left: 0;
+    width: 100vw;
+    height: 12vw;
+    right: 0;
+    background: url(./../img/mountain-vector.png);
+    background-size: auto 100%;
+}
+
+.page-background.page-three .profile {
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    bottom: 140px;
+    height: calc(45vw - 300px);
+    width: calc(45vw - 300px);
+    border-radius: 50%;
+    right: 65%;
+    background: url('./../img/about.png') center right no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 10px #000;
+}
+
+.page-background.footer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 120px;
+    background-color: #e7e1d0;
+    background: #e7e1d0;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 150px 0 0 #171717;
+}
+
+.page-background.footer .copyright {
+    flex: 1 1 200px;
+    line-height: 20px;
+    margin: 0 0 0 200px;
+    font-family: 'Karla', 'Arial', sans-serif;
+    padding: 0;
+    font-weight: bold;
+    color: hsla(0, 0%, 10%, 0.9);
+}
+
+main {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    right: 50px;
+    height: 100vh;
+    width: calc(100vw - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1280px) {
+    .page-background.page-three .profile {
+        position: absolute;
+        top: 140px;
+        left: 100px;
+        bottom: auto;
+        height: calc(45vw - 200px);
+        width: calc(45vw - 200px);
+        border-radius: 50%;
+    }
+}

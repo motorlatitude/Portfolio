@@ -1,0 +1,136 @@
+.work-title {
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    font-size: 110px;
+}
+
+.work-title h1 {
+    font-family: 'Karla', 'Arial', sans-serif;
+    padding: 0;
+    font-weight: bold;
+    margin: -50px 0 0 200px;
+    width: 1050px;
+    color: hsla(0, 0%, 10%, 0.9);
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.work-title h1:after {
+    content: '';
+    position: absolute;
+    top: 58px;
+    left: 0;
+    width: 100%;
+    right: 0;
+    bottom: 50px;
+    height: calc(100% - 114px);
+    border-top: 1px solid hsla(0, 0%, 75%, 1);
+    border-bottom: 1px solid hsla(0, 0%, 75%, 1);
+    z-index: -1;
+}
+
+.work-title h1:before {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 20px;
+    width: calc(100% - 45px);
+    right: 0;
+    bottom: 20px;
+    height: calc(100% - 54px);
+    border-left: 1px solid hsla(0, 0%, 75%, 1);
+    border-right: 1px solid hsla(0, 0%, 75%, 1);
+    z-index: -1;
+}
+
+.work-title h5 {
+    font-family: 'Libre Baskerville', 'Arial', sans-serif;
+    padding: 0;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0 0 0 220px;
+    width: 40vw;
+    line-height: 50px;
+    color: hsla(0, 0%, 40%, 1);
+}
+
+@media (max-width: 2200px) {
+    .work-title {
+        font-size: 90px;
+    }
+    .work-title h1 {
+        padding: 0;
+        font-weight: bold;
+        margin: -50px 0 0 200px;
+        width: 865px;
+    }
+    .work-title h1:after {
+        top: 48px;
+        height: 115px;
+    }
+    .work-title h1:before {
+        left: 15px;
+    }
+}
+
+/* HD */
+
+@media (max-width: 1920px) {
+    .work-title h1 {
+        margin: -50px 0 0 100px;
+    }
+    .work-title h5 {
+        margin: 0 0 0 120px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 1680px) {
+    .work-title {
+        font-size: 70px;
+    }
+    .work-title h1 {
+        padding: 0;
+        font-weight: bold;
+        margin: -50px 0 0 100px;
+        width: 685px;
+    }
+    .work-title h1:after {
+        top: 37px;
+        height: 90px;
+    }
+    .work-title h1:before {
+        left: 12px;
+    }
+}
+
+@media (max-width: 1280px) {
+    .work-title {
+        font-size: 50px;
+    }
+    .work-title h1 {
+        padding: 0;
+        font-weight: bold;
+        margin: -50px 0 0 100px;
+        width: 480px;
+    }
+    .work-title h1:after {
+        top: 27px;
+        height: 64px;
+        width: 490px;
+    }
+    .work-title h1:before {
+        left: 9px;
+        top: 20px;
+        height: 80px;
+        width: 457px;
+    }
+    .work-title h5 {
+        margin: 0 0 0 120px;
+        font-size: 18px;
+        line-height: 36px;
+        width: 80vw;
+    }
+}

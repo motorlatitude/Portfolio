@@ -1,0 +1,140 @@
+main .banner .masonry-grid {
+    flex: 0 0 calc(50vw - 170px);
+    width: calc(50vw - 170px);
+    height: 100vh;
+    margin-left: 70px;
+}
+
+.masonry-grid.work {
+    flex: 0 0 calc(50vw - 100px);
+    width: calc(50vw - 100px);
+    height: 50vh;
+    margin-left: 200px;
+}
+
+.masonry-grid .masonry-wrapper {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+}
+
+.masonry-grid .masonry-wrapper .masonry-column {
+    flex: 1 1 calc(50% - 100px);
+    width: calc(50% - 100px);
+    margin-right: 3vw;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.masonry-grid .masonry-wrapper .masonry-column:last-child {
+    margin-top: 120px;
+}
+
+.masonry-grid.work .masonry-wrapper .masonry-column:last-child {
+    margin-top: 60px;
+}
+
+.masonry-grid .brick {
+    width: calc(100% - 50px);
+    height: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    margin-bottom: 90px;
+}
+
+.masonry-grid .brick .brick-image {
+    width: calc(100% - 40px);
+    margin-left: 40px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 6px 6px 10px hsla(240, 3%, 2%, 0.2), 0 0 20px hsla(240, 3%, 2%, 0.1);
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.masonry-grid .brick .brick-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.masonry-grid .brick .brick-title {
+    font-family: 'Karla', 'Arial', sans-serif;
+    font-size: 14px;
+    color: hsla(240, 3%, 30%, 1);
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 1px;
+    width: 30px;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: right;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    transition: color 0.4s ease-in-out;
+}
+
+.masonry-grid .brick .brick-title i {
+    transform: rotate(180deg);
+}
+
+.masonry-grid .brick:hover .brick-image img {
+    transform: scale(1.1);
+}
+
+.masonry-grid .brick:hover .brick-title {
+    color: #344cff;
+}
+
+.masonry-grid .brick:hover .brick-image {
+    transform: translateY(-20px);
+    box-shadow: 6px 15px 20px hsla(240, 3%, 2%, 0.4);
+}
+
+@media (max-width: 2300px) {
+    .masonry-grid .masonry-wrapper .masonry-column {
+        margin-right: 1vw;
+    }
+}
+
+/* HD */
+@media (max-width: 1920px) {
+    main .banner .masonry-grid {
+        flex: 0 0 calc(50vw - 120px);
+        width: calc(50vw - 120px);
+        height: 100vh;
+        margin-left: 70px;
+    }
+
+    .masonry-grid.work {
+        flex: 0 0 50vw;
+        width: 50vw;
+        height: 50vh;
+        margin-left: 100px;
+    }
+}
+
+@media (max-width: 1280px) {
+    main .banner .masonry-grid {
+        flex: 0 0 calc(50vw - 100px);
+        width: calc(50vw - 100px);
+        height: 100vh;
+        margin-left: -35vw;
+        margin-top: 150vh;
+    }
+    .masonry-grid .brick .brick-title {
+        font-size: 10px;
+    }
+}
