@@ -33,7 +33,7 @@ body {
     width: 100vw;
     height: 100vh;
     background-color: #171717;
-    background: url(./../img/background@2x.png) center center no-repeat;
+    background: url(./../img/background.png) center center no-repeat;
     background-size: cover;
     filter: saturate(0);
     z-index: 1;

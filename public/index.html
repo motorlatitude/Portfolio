@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156517933-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-
-            gtag('config', 'UA-156517933-1');
-        </script>
         <meta charset="utf-8" />
         <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,14 +14,12 @@
     <body>
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="root"></div>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="/__/firebase/7.13.1/firebase-app.js"></script>
-
-        <!-- TODO: Add SDKs for Firebase products that you want to use
-            https://firebase.google.com/docs/web/setup#available-libraries -->
         <script src="/__/firebase/7.13.1/firebase-analytics.js"></script>
-
-        <!-- Initialize Firebase -->
+        <script src="/__/firebase/7.13.1/firebase-performance.js"></script>
         <script src="/__/firebase/init.js"></script>
+        <script>
+            var perf = firebase.performance();
+        </script>
     </body>
 </html>
