@@ -53,6 +53,7 @@ header.fixed .Logo .Logo-Name span {
 header nav {
     flex: 0 0 600px;
     text-align: right;
+    display: none;
 }
 
 header nav ul {

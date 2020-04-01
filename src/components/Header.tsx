@@ -3,6 +3,7 @@ import * as React from 'react';
 import './../assets/css/Header.css';
 import logo from './../assets/img/logo.png';
 import { useTrail, animated } from 'react-spring';
+import { Parallax } from '@react-spring/parallax';
 
 const Header: React.FC = () => {
     const navItems = [
